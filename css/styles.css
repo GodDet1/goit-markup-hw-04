@@ -467,7 +467,7 @@ footer address {
 footer .container.centered {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: baseline;
 }
 
 .footer-contact {
@@ -488,7 +488,7 @@ footer .container.centered {
   margin-right: 70px;
 }
 
-.footer-connect h2 {
+.footer-connect p {
   margin: 0px 0px 20px;
 
   font-weight: bold;

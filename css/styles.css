@@ -165,7 +165,8 @@ header {
   margin-right: 10px;
 }
 
-.contact:hover svg {
+.contact:hover svg,
+.contact:focus svg {
   fill: var(--accent-color);
 }
 
@@ -243,14 +244,21 @@ header {
   text-align: left;
 }
 
-.us-icons {
-  box-sizing: content-box;
-  width: 100%;
-  background-color: var(--bg-color);
-  align-content: center;
+.us-icon_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 120px;
+
   margin-bottom: 30px;
+
   border-radius: 4px;
-  padding: 25px 0px;
+  background-color: var(--bg-color);
+}
+
+.us-icons {
+  align-content: center;
 }
 
 .us-benefits {
@@ -377,6 +385,10 @@ header {
   justify-content: center;
 }
 
+.team-contacts a:not(:last-child) {
+  margin-right: 10px;
+}
+
 .team-contacts a {
   width: 44px;
   height: 44px;
@@ -389,11 +401,13 @@ header {
   fill: var(--team-icon-color);
 }
 
-.team-contacts a:hover svg {
+.team-contacts a:hover svg,
+.team-contacts a:focus svg {
   fill: var(--main-color);
 }
 
-.team-contacts a:hover {
+.team-contacts a:hover,
+.team-contacts a:focus {
   background-color: var(--accent-color);
 }
 
@@ -405,9 +419,17 @@ header {
 
   color: var(--headline-color);
 }
+
 .clients h2 {
   margin-bottom: 50px;
+  margin-top: 0px;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
+
 .clients-icons {
   display: flex;
   justify-content: center;
@@ -433,10 +455,13 @@ header {
   fill: var(--team-icon-color);
 }
 
-.clients-icons a:hover svg {
+.clients-icons a:hover svg,
+.clients-icons a:focus svg {
   fill: var(--accent-color);
 }
-.clients-icons a:hover {
+
+.clients-icons a:hover,
+.clients-icons a:focus {
   border-color: var(--accent-color);
 }
 
@@ -523,7 +548,8 @@ footer .container.centered {
   border-radius: 50%;
 }
 
-.footer-social:hover {
+.footer-social:hover,
+.footer-social:focus {
   background-color: var(--accent-color);
 }
 
